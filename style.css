@@ -31,9 +31,7 @@ body {
     width: 100%;
     scroll-behavior: smooth;
 }
-span{
-font-family:'poppins',sans-serif;
-}
+
 body {
     overflow-x: hidden;
     background: linear-gradient(rgba(255, 252, 255, 0.1), rgba(255, 252, 255, 0.3), rgba(255, 252, 255, 0.4), rgba(255, 252, 255, 0.5)), url(langingimg.jpg), no-repeat, center;
@@ -120,7 +118,6 @@ nav {
 
 #mobnav {
     /* visibility: hidden; */
-    font-family:"poppins",
     position: absolute;
     z-index: 102;
     top: 0;
@@ -236,7 +233,7 @@ nav ul li {
 
 nav ul li a {
     position: relative;
-    font-family: "samarkan", sans-serif;
+    font-family: "roboto", sans-serif;
     text-decoration: none;
     color: rgb(255, 255, 255);
     font-weight: 800;
@@ -267,7 +264,7 @@ nav .navright button {
 }
 
 nav .navright button a {
-    font-family: "samarkan", sans-serif;
+    font-family: "poppins", sans-serif;
     text-decoration: none;
     color: white;
     outline: none;
