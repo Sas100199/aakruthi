@@ -118,6 +118,7 @@ nav {
 
 #mobnav {
     /* visibility: hidden; */
+    font-family:"poppins",
     position: absolute;
     z-index: 102;
     top: 0;
