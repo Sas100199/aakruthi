@@ -327,7 +327,7 @@ nav .navright button a {
     text-align: center;
     color: white;
     margin-bottom: 50px;
-    z-index: 567;
+    z-index: 678;
 }
 
 #cont1 {
@@ -701,6 +701,7 @@ nav .navright button a {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    background: white;
 
 }
 
@@ -729,6 +730,7 @@ nav .navright button a {
     min-height: 100vh;
     /* background-color: wheat; */
     min-width: 100%;
+    background: white;
     display: flex;
     /* float: inline-start; */
     flex-direction: column;
@@ -779,23 +781,23 @@ nav .navright button a {
 }
 
 .carousel__face:nth-child(1) {
-    background-image: url("images/model.jpg");
+    background-image: url("model.jpg");
     transform: rotateY(0deg) translateZ(430px);
 }
 
 .carousel__face:nth-child(2) {
-    background-image: url("images/robfight.jpg");
+    background-image: url("robfight.jpg");
     transform: rotateY(40deg) translateZ(430px);
 }
 
 .carousel__face:nth-child(3) {
-    background-image: url("images/walkingrobot.jpg");
+    background-image: url("walkingrobot.jpg");
     transform: rotateY(80deg) translateZ(430px);
     background-position: center;
 }
 
 .carousel__face:nth-child(4) {
-    background-image: url("images/walkingrobot2.jpg");
+    background-image: url("walkingrobot2.jpg");
     transform: rotateY(120deg) translateZ(430px);
     background-position: top;
     background-size: 100%;
@@ -804,27 +806,27 @@ nav .navright button a {
 }
 
 .carousel__face:nth-child(5) {
-    background-image: url("images/robfight.jpg");
+    background-image: url("robfight.jpg");
     transform: rotateY(160deg) translateZ(430px);
 }
 
 .carousel__face:nth-child(6) {
-    background-image: url("images/robots.jpg");
+    background-image: url("robots.jpg");
     transform: rotateY(200deg) translateZ(430px);
 }
 
 .carousel__face:nth-child(7) {
-    background-image: url("images/group.jpg");
+    background-image: url("group.jpg");
     transform: rotateY(240deg) translateZ(430px);
 }
 
 .carousel__face:nth-child(8) {
-    background-image: url("images/news1.jpg");
+    background-image: url("news1.jpg");
     transform: rotateY(280deg) translateZ(430px);
 }
 
 .carousel__face:nth-child(9) {
-    background-image: url("images/racetrack.jpg");
+    background-image: url("racetrack.jpg");
     transform: rotateY(320deg) translateZ(430px);
 }
 
@@ -855,6 +857,7 @@ footer {
     flex-direction: column;
     justify-content: center;
     text-align: center;
+    background: white;
     border-top: 1px solid black;
 }
 
