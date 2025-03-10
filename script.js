@@ -11,16 +11,26 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // ANIMATING HEADER TEXT
     var lh = document.querySelector("#lh");
-    if (lh) {
-        var lhsplit = lh.textContent.trim().split(''); // Split into individual letters
-        lh.innerHTML = lhsplit.map(letter => `<span class="fire-text">${letter}</span>`).join('');
+    var lhy = document.querySelector(".lhy");
+    if (lh && lhy) {
+        gsap.from(".lsp",{
 
+            duration: 1,
+            y: -50,
+            opacity: 0,
+            ease: "power3.out",
+            stagger: 0.1
+        })
+        var lhsplit = lh.textContent.trim().split(''); // Split into individual letters
+        var lhysplit = lhy.textContent.trim().split(''); // Split into individual letters
+        lh.innerHTML = lhsplit.map(letter => `<span class=" ">${letter}</span>`).join('');
+        lhy.innerHTML = lhysplit.map(letter => `<span class=" ">${letter}</span>`).join('');
         let spans = document.querySelectorAll("#lh span");
         spans.forEach((span, index) => {
             span.style.zIndex = spans.length - index; // Stack order
         });
 
-        gsap.from("#lh span", {
+        gsap.from("#lh span , .lhy span", {
             duration: 1,
             y: -50,
             opacity: 0,
@@ -54,7 +64,7 @@ document.addEventListener("DOMContentLoaded", () => {
             duration: 1.4,
             opacity: 0,
             ease: "power3.out",
-            stagger: 0.01,
+            stagger: 0.0012122,
             scrollTrigger: {
                 trigger: "#cont2 p",
                 scroller: "body",
@@ -78,16 +88,22 @@ document.addEventListener("DOMContentLoaded", () => {
 
         menu.addEventListener("click", () => {
             mobnav.style.display = "flex";
-            cross.style.display = "block";
+            cross.style.display = "flex";
             menu.style.display = "none";
+ 
 
             tl.from("#mobnav", {
                 transform: "translateX(100%)",
                 ease: "power3.out",
-                duration: 1,
+                duration: 0.5,
+            });
+            tl.from("#cross", {
+                opacity: 0,
+                duration: 0.2,
+                ease: "power3.out"
             });
 
-            tl.from("#mobnav ul li, #mobnav button", {
+            tl.from("#mobnav ul li", {
                 duration: 1,
                 y: -50,
                 opacity: 0,
@@ -105,3 +121,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
     mobileMenu(); // Initialize mobile menu after DOM is loaded
 });
+let angle = 0;
+function gallerySpin(direction) {
+    if (direction === 'left') {
+        angle += 40;
+    } else {
+        angle -= 40;
+    }
+    gsap.to("#carousel", { rotationY: angle, duration: 1, ease: "power2.inOut" });
+}
+setInterval(gallerySpin, 1000);
