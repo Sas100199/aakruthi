@@ -61,5 +61,4 @@ We welcome contributions! To contribute:
 ## License
 This project is licensed under the MIT License.
 
-## Contact
-For any queries, reach out via [email@example.com](mailto:email@example.com).
+
