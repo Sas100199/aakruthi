@@ -672,18 +672,22 @@ nav .navright button a {
     border-radius: 20px;
 }
 
-.regb {
+.regb{
     border: 1px solid white;
     margin: 5px auto;
     padding: 1px;
     height: 55px;
+      
     /* background-color: #FF4500; */
     width: 100px;
 }
 
-.regb button {
+
+.regb button:disabled  {
     border: 1px solid white;
     color: wheat;
+    background-color: #ccc;
+  cursor: not-allowed;
     font-family: sans-serif;
     background-color: #04041D;
     transform: translateX(-20px);
